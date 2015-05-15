@@ -1,0 +1,30 @@
+{
+  "name": "is-uppercase",
+  "version": "0.0.0",
+  "description": "My riveting module",
+  "license": "MIT",
+  "repository": "arthurvr/is-uppercase",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "uppercase",
+    "check",
+    "string",
+    "letter"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
