@@ -14,7 +14,7 @@ it('should test if a string is all uppercase', function () {
 it('should throw when passing non-string input', function () {
 	[function () {}, null, undefined, 23].forEach(function (input) {
 		assert.throws(function () {
-			isLowercase(input);
+			isUppercase(input);
 		});
 	});
 });
