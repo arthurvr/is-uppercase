@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && mocha"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -25,13 +25,7 @@
     "letter"
   ],
   "devDependencies": {
-    "mocha": "*",
+    "ava": "*",
     "xo": "*"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "mocha"
-    ]
   }
 }
