@@ -1,8 +1,7 @@
-'use strict';
-var test = require('ava');
-var isUppercase = require('./');
+import test from 'ava';
+import isUppercase from './';
 
-test('should test if a string is all uppercase', function (t) {
+test('should test if a string is all uppercase', t => {
 	t.true(isUppercase('UNICORNS'));
 	t.true(isUppercase('1'));
 	t.true(isUppercase('A'));
@@ -14,9 +13,9 @@ test('should test if a string is all uppercase', function (t) {
 	t.end();
 });
 
-test('should throw when passing non-string input', function (t) {
-	[function () {}, null, undefined, 23].forEach(function (input) {
-		t.throws(function () {
+test('should throw when passing non-string input', t => {
+	[null, undefined, 23].forEach(input => {
+		t.throws(() => {
 			isUppercase(input);
 		});
 	});
