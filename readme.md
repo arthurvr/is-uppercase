@@ -13,7 +13,7 @@ $ npm install --save is-uppercase
 ## Usage
 
 ```js
-var isUppercase = require('is-uppercase');
+const isUppercase = require('is-uppercase');
 
 isUppercase('unicorns');
 //=> false
